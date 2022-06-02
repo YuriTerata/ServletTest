@@ -10,15 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import Bean.Send;
 
-@WebServlet(urlPatterns = {
-		"/jsp/contact" })
+@WebServlet(urlPatterns = {"/jsp/contact" })
 public class Contact extends HttpServlet {
 
 	public void doPost(
 			HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		try {
-
 			//データ取得
 			String name = request.getParameter("name");
 			String office = request.getParameter("office");
@@ -38,7 +36,6 @@ public class Contact extends HttpServlet {
 			request.setAttribute("send", s);
 
 			request.getRequestDispatcher("/jsp/result.jsp").forward(request, response);
-
 
 		} catch (Exception e) {
 			e.printStackTrace();

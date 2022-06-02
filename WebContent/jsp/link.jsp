@@ -4,5 +4,4 @@
 
 リンク先です。
 
-
 <%@include file="../footer.html"%>

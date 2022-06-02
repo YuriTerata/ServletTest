@@ -39,7 +39,6 @@
 		</p>
 	</label>
 
-
 	<p>資料請求を希望しますか。</p>
 	<label>
 		<input type="radio" name="document" value="Yes" checked>Yes
@@ -48,13 +47,10 @@
 		<input type="radio" name="document" value="No">No
 	</label>
 
-
 	<p>
 		<input type="submit" value="送信">
 	</p>
 
 </form>
-
-
 
 <%@include file="../footer.html"%>
