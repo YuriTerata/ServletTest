@@ -35,7 +35,13 @@ public class Contact extends HttpServlet {
 
 			request.setAttribute("send", s);
 
-			request.getRequestDispatcher("/jsp/result.jsp").forward(request, response);
+			if (document.equals("Yes")){
+				request.getRequestDispatcher("/jsp/resultyes.jsp").forward(request, response);
+
+			}else {
+				request.getRequestDispatcher("/jsp/resultno.jsp").forward(request, response);
+
+			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
